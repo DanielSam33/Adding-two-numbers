@@ -1,4 +1,4 @@
-package dsa;
+package stack;
 
 import java.util.Stack;
 
@@ -37,6 +37,7 @@ public class Stackexample {
 		boolean a=stack.addAll(stack1);
 		
 		System.out.println("Adding 2 stacks(objects) = "+a);
+		System.out.println("output = "+stack);
 		
 		
 		System.out.println("is empty check:"+stack.isEmpty());
