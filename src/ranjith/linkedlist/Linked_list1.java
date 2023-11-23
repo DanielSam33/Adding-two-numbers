@@ -1,10 +1,11 @@
 package ranjith.linkedlist;
 
-public class Linked_list1 {
+import java.util.LinkedList;
+import java.util.Queue;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+public class Linked_list1<E> {
+	
 
-	}
+	
 
 }
