@@ -24,4 +24,10 @@ public class Arithmeticoperator {
 		int division=value/value2;
 		return division;
 	}
+	
+	public void Arithmeticoperator(int value,int value2) {
+		
+		
+		
+	}
 }
