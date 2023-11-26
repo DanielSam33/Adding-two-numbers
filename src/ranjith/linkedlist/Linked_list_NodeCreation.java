@@ -6,7 +6,8 @@ public class Linked_list_NodeCreation {
 	Linked_list_NodeCreation next;//value=nul
 	
 	Linked_list_NodeCreation (int data) {
-		this.data=data;                 // insert at end method
+		this.data=data;
+		this.next=null;
 	}
 	
 }
