@@ -30,6 +30,10 @@ public class Linked_list_Method {
 		}
 	}
 	
+	public void CircularLinkedList(int data) {
+		
+	}
+	
 	public void InsertAtBeginning(int data) {
 		Linked_list_NodeCreation insert=new Linked_list_NodeCreation(data);
 		if(head==null) {
@@ -41,21 +45,6 @@ public class Linked_list_Method {
 			head=insert;
 		}
 	}
-	
-	/*public void InsertAtPosition(int position,int data) {
-		Linked_list_NodeCreation insert=new Linked_list_NodeCreation(data);
-		Linked_list_NodeCreation current=head;
-		for(int i=0;i<=position;i++) {
-			current=current.next;
-		}
-		insert.next=current.next;
-		current.next=insert;
-		
-		if(position==0) {
-			InsertAtBeginning(data);
-			return;
-		}
-	}*/
 	
 	public void InsertBeginning(int data) {
 		Linked_list_NodeCreation insert=new Linked_list_NodeCreation(data);
@@ -70,7 +59,28 @@ public class Linked_list_Method {
 		for(int i=0;i<pos-1;i++) 
 			temp=temp.next;
 			insert.next=temp.next;
-			temp.next=insert;
-		
+			temp.next=insert;	
+	}
+	
+	public void DeleteAtBeginning() {
+		Linked_list_NodeCreation temp=head;
+		head=head.next;
+		temp.next=null;
+		}
+	
+	public void DeleteAtEnd() {
+		Linked_list_NodeCreation temp=head;
+		while(temp.next!=tail)
+			temp=temp.next;
+			temp.next=null;
+			tail=temp;
+	}
+	
+	public void DeleteAtPosition(int pos) {
+		Linked_list_NodeCreation temp=head;
+		for(int i=0;i<pos-1;i++) {
+			temp=temp.next;
+		}
+		temp.next=temp.next.next;	
 	}
 }

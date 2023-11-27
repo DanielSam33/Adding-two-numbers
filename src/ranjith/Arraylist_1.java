@@ -28,6 +28,7 @@ public class Arraylist_1 {
 		
 		arr1.forEach(Constructor -> {
 			System.out.println(Constructor.name+" : "+Constructor.index);	
-		});
+		}
+		);
 	}
 }

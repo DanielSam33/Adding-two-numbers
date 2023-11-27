@@ -19,8 +19,18 @@ public class LinkedlisTMain {
 		System.out.print("\n-------\n");
 		a.InsertAtPosition(3, 70);
 		a.Display();
-//		a.InsertAtPosition(3, 80);
-//		a.Display();
+		System.out.println("\n--------");
+		a.DeleteAtBeginning();
+		a.Display();
+		System.out.println("\n--------");
+		a.DeleteAtEnd();
+		a.Display();
+		System.out.println("\n--------");
+		a.DeleteAtPosition(2);
+		a.Display();
+		a.CircularLinkedList(10);
+		a.Display();
+		
 	}
 	
 }
