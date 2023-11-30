@@ -2,9 +2,9 @@ package tree;
 
 public class ExampleBinaryTreeFunction {
 
-	ExampleBinaryTreeData node;
+	BT1 node;
 	
-	public ExampleBinaryTreeFunction(ExampleBinaryTreeData node) {
+	public ExampleBinaryTreeFunction(BT1 node) {
 		this.node=node;
 	}
 	
@@ -13,7 +13,7 @@ public class ExampleBinaryTreeFunction {
 		inorder(node);
 	}
 	
-	public void inorder(ExampleBinaryTreeData current) {
+	public void inorder(BT1 current) {
 		
 		if(current!=null) {
 			inorder(current.Left);
@@ -26,7 +26,7 @@ public class ExampleBinaryTreeFunction {
 		preorder(node);
 	}
 	
-	public void preorder(ExampleBinaryTreeData current) {
+	public void preorder(BT1 current) {
 		if(current!=null) {
 			System.out.print(current.data+" ");
 			preorder(current.Left);
@@ -38,7 +38,7 @@ public class ExampleBinaryTreeFunction {
 		postorder(node);
 	}
 	
-	public void postorder(ExampleBinaryTreeData current) {
+	public void postorder(BT1 current) {
 		if(current!=null) {
 			postorder(current.Left);
 			postorder(current.Right);

@@ -26,7 +26,7 @@ public class Linked_list_Method {
 		while(temp!=null) {
 			System.out.print(temp.data);
 			temp=temp.next;
-			System.out.print(" ");
+			System.out.print(" -> ");
 		}
 	}
 	
@@ -62,6 +62,21 @@ public class Linked_list_Method {
 			temp.next=insert;	
 	}
 	
+	public void InsertPosition(int data,int pos) {
+		if(pos==0) {
+			InsertBeginning( data);
+			return;
+		}
+		
+		Linked_list_NodeCreation temp=head;
+		for(int i=1;i<pos;i++) {
+			temp=temp.next;
+		}
+		
+		Linked_list_NodeCreation newnode=new Linked_list_NodeCreation(data,temp.next);
+		temp.next=newnode;
+	}
+	
 	public void DeleteAtBeginning() {
 		Linked_list_NodeCreation temp=head;
 		head=head.next;
@@ -82,5 +97,16 @@ public class Linked_list_Method {
 			temp=temp.next;
 		}
 		temp.next=temp.next.next;	
+	}
+	
+	public Linked_list_NodeCreation find(int data) {
+		Linked_list_NodeCreation node=head;
+		while(node!=null) {
+			if(node.data==data) {
+				return node;
+			}
+			node=node.next;
+		}
+		return null;
 	}
 }

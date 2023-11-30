@@ -35,7 +35,10 @@ public class ExampleHashMap {
 			}
 		);
 		
+		System.out.println(hash.keySet()+" . "+hash.values());		
 		System.out.println(search+" contains "+answer);
 		System.out.println(hash.entrySet());
+		
+		
 	}
 }

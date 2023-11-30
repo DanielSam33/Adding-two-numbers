@@ -28,9 +28,10 @@ public class LinkedlisTMain {
 		System.out.println("\n--------");
 		a.DeleteAtPosition(2);
 		a.Display();
-		a.CircularLinkedList(10);
-		a.Display();
-		
+		System.out.println("\n--------");
+//		a.InsertPosition(2, 80);        //need to clarify
+//		a.Display();					//need to clarify
+	
 	}
 	
 }

@@ -4,27 +4,26 @@ public class ExampleBinaryTreeMain {
 
 	public static void main(String[] args) {
 		
-		ExampleBinaryTreeData n=new ExampleBinaryTreeData(19);
-		n.Left=new ExampleBinaryTreeData(17);
-		n.Right=new ExampleBinaryTreeData(22);
-		n.Left.Left=new ExampleBinaryTreeData(7);
-		n.Left.Right=new ExampleBinaryTreeData(2);
-		n.Left.Right.Left=new ExampleBinaryTreeData(39);
-		n.Left.Right.Right=new ExampleBinaryTreeData(32);
-		//n.Left.Left.Left=new ExampleBinaryTreeData(7);
-		n.Left.Left.Left=new ExampleBinaryTreeData(33);
-		n.Left.Left.Right=new ExampleBinaryTreeData(31);
-	    n.Left.Left.Right.Left=new ExampleBinaryTreeData(9);
-		n.Left.Left.Left.Left=new ExampleBinaryTreeData(5);
-		n.Left.Left.Left.Right=new ExampleBinaryTreeData(29);
-		n.Right.Left=new ExampleBinaryTreeData(8);
-		n.Right.Right=new ExampleBinaryTreeData(6);
-		n.Right.Right.Left=new ExampleBinaryTreeData(16);
-		n.Right.Right.Right=new ExampleBinaryTreeData(12);
-		n.Right.Right.Left.Left=new ExampleBinaryTreeData(13);
-		n.Right.Right.Left.Right=new ExampleBinaryTreeData(14);
-		n.Right.Right.Left.Right.Right=new ExampleBinaryTreeData(1);
-		n.Right.Right.Left.Right.Right.Right=new ExampleBinaryTreeData(3);
+		BT1 n=new BT1(38);
+		n.Left=new BT1(27);
+		n.Left.Left=new BT1(20);
+		n.Left.Right=new BT1(18);
+		n.Left.Right.Right=new BT1(28);
+		n.Left.Left.Left=new BT1(55);
+		n.Left.Left.Right=new BT1(24);
+		n.Right=new BT1(25);
+		n.Right.Left=new BT1(45);
+		n.Right.Right=new BT1(32);
+		n.Right.Left.Left=new BT1(39);
+		n.Right.Left.Right=new BT1(8);
+		n.Right.Left.Right.Right=new BT1(12);
+		n.Right.Left.Right.Right.Left=new BT1(12);
+		n.Right.Right.Left=new BT1(13);
+		n.Right.Right.Right=new BT1(16);
+		n.Right.Right.Right.Left=new BT1(6);
+		n.Right.Right.Right.Right=new BT1(4);
+		
+		
 		
 		ExampleBinaryTreeFunction w=new ExampleBinaryTreeFunction(n);
 		System.out.println("Inorder data :");
