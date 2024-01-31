@@ -24,5 +24,6 @@ break;
 default:
 	System.out.println("Not a vowel");
 }
-}
+	s.close();
+	}
 }

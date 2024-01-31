@@ -10,9 +10,11 @@ public class Natural_numbers {
 		int result=0;
 		for (int i=1;i<=n;i++) 
 		{
+			System.out.print(i+" ");
 			result+=i;//result=result+i;
 		}
-		System.out.println("Sum of natural numbers ="+result);
+		System.out.println();
+		System.out.println("Sum of natural numbers = "+result);
 		s.close();
 	}
 

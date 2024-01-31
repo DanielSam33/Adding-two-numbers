@@ -10,7 +10,6 @@ public class Comapreto_equal {
 		System.out.println(s1==s2);//cpamre the values and dtatatypes
 		System.out.println(s2==s3);
 		System.out.println(s2.equals(s3));
-
+		
 	}
-
 }
